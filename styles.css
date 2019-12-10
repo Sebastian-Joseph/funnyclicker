@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+}
+
+table {
+    margin-left: auto;
+    margin-right: 25px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid;
+    background-color: white;
+}
+
+.building-picture {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.column-3 {
+    border: 0px solid;
+    background-color: transparent;
+}

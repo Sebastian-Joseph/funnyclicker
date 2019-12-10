@@ -3,24 +3,31 @@
 <html>
 	<head>
 		<title>Tony Juice Clicker 2.0</title>
+
+		<link href="styles.css" rel="stylesheet">
 	</head>
 
 	<body>
 		<h1 class="title">Tony Juice Clicker 2.0</h1>
 
-        <div class="instructions" id="general-instructions">Click Tony Juice (TJ) and spend TJ for more TJ so your TJ makes you more TJ.</div>
-		<div class="instructions" id="building-instructions">Spend TJ to buy buildings that produce TJ automatically.</div>
-		<div class="instructions" id="upgrade-instructions">Spend TJ to double your clicking power.</div>
+        <div class="statistics">placeholder text</div>
 
 		<table class="buildings-table">
 			<tr>
+				<td><img class="building-picture" src="images/juicer.jpg"></td>
 				<td>
-					<p class="building-name">Juice Maker</p>
-					<p class="cost">
-						<em>placeholder text</em>
-						<span><em>placeholder text</em></span>
-					</p>
+					<div class="building-name">Juicer</div>
+					<div class="cost" id="juicer-cost"></div>
 				</td>
+				<td class="column-3"><button id="juicer-button">+</button>
+			</tr>
+			<tr>
+				<td><img class="building-picture" src="images/farm.jpg"></td>
+				<td>
+					<div class="building-name">Farm</div>
+					<div class="cost" id="cost"></div>
+				</td>
+				<td class="column-3"><button id="farm-button">+</button>
 			</tr>
 		</table>
 
