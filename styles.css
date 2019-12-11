@@ -6,26 +6,41 @@
 body {
     background-image: url("images/background.png");
     background-size: cover;
+    font: "Comic Sans MS";
+}
+
+div {
+    color: white;
 }
 
 table {
     margin-left: auto;
     margin-right: 25px;
-    border-collapse: collapse;
 }
 
 td {
-    border: 2px solid;
-    background-color: white;
+    background-image: none;
+    background-color: transparent;
+}
+
+button {
+    width: 25px;
+    height: 25px;
 }
 
 .building-picture {
     display: block;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 
-.column-3 {
-    border: 0px solid;
-    background-color: transparent;
+.column-1 {
+    border: 2px solid;
+}
+
+.column-2 {
+    background-image: url("images/wood-texture.jpg");
+    background-color: #cccccc;
+    border: 2px solid;
+    width: 200px;
 }
