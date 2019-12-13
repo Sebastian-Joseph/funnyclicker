@@ -6,7 +6,7 @@
 body {
     background-image: url("images/background.png");
     background-size: cover;
-    font: "Comic Sans MS";
+    font-family: comic sans ms;
 }
 
 div {
@@ -24,8 +24,18 @@ td {
 }
 
 button {
+    margin-left: 5px;
+    background-color: grey;
+    border: solid;
+    border-color: black;
     width: 25px;
     height: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
 }
 
 .building-picture {
@@ -42,5 +52,17 @@ button {
     background-image: url("images/wood-texture.jpg");
     background-color: #cccccc;
     border: 2px solid;
-    width: 200px;
+    width: 240px;
+}
+
+.building-name {
+    margin-left: 5px;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.cost {
+    margin-left: 5px;
+    margin-right: auto;
+    font-size: 15px;
 }
