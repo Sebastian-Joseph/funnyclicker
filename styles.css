@@ -81,3 +81,11 @@ button {
 .quantity {
     color: orange;
 }
+
+#bottle {
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    margin: 0 auto;
+}
