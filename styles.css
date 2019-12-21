@@ -9,8 +9,30 @@ body {
     font-family: comic sans ms;
 }
 
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px orange;
+    margin-top: 20px;
+    margin-bottom: auto;
+}
+
 div {
     color: white;
+}
+
+.statistics-table {
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: 0 auto;
+}
+
+.statistics {
+    background-image: url("images/wood-texture.jpg");
+    border: 2px solid;
+    width: 400px;
+    height: 100px;
 }
 
 .buildings-table {
@@ -18,11 +40,11 @@ div {
     margin-right: 25px;
 }
 
-tr:hover {
+.clickable:hover {
     transform: scale(1.01);
 }
 
-tr:active {
+.clickable:active {
     transform: scale(1);
 }
 
@@ -82,10 +104,22 @@ button {
     color: orange;
 }
 
+.copyright {
+    color: black;
+}
+
 #bottle {
-    margin: 0 auto;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    margin: 0 auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 400px;
+}
+
+#bottle:hover {
+    transform: scale(1.02);
+}
+
+#bottle:active {
+    transform: scale(1);
 }

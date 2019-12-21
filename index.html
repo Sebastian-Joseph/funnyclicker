@@ -8,90 +8,115 @@
 	</head>
 
 	<body>
-		<h1 class="title">Tony Juice Clicker 2.0</h1>
+		<h1>Tony Juice Clicker 2.0</h1>
 
-		<img id="bottle" src="images/bottle.png">
+		<table class="statistics-table">
+			<tr>
+				<td>
+					<img id="bottle" src="images/juice_bottle.png">
+				</td>
+			</tr>
+			<tr>
+				<td class="statistics">
+					<div>Tony Juice Per Second: <span id="tj-per-sec">0</span></div>
+					<div>Tony Juice: <span id="tj-count">0</span></div>
+				</td>
+			</tr>
+		</table>
 
 		<table class="buildings-table">
 
 			<!-- Juicer -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/juicer.jpg"></td>
 				<td class="column-2">
 					<div class="building-name">Juicer x
 						<span class="quantity" id="juicer-quantity">0</span>
 					</div>
 					<div class="cost">Cost: <span id="juicer-cost">25</span> TJ</div>
-					<div class="building-production">Each Juicer produces <span id="juicer-production-alone">0</span> TJ/sec for a total of <span id="juicer-production-total">0</span> TJ/sec.</div>
 				</td>
 			</tr>
 
 			<!-- Farm -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/farm.jpg"></td>
 				<td class="column-2">
-					<div class="building-name">Farm</div>
+					<div class="building-name">Farm x
+						<span class="quantity" id="farm-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="farm-cost">150</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Factory -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/factory.png"></td>
 				<td class="column-2">
-					<div class="building-name">Factory</div>
+					<div class="building-name">Factory x
+						<span class="quantity" id="factory-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="factory-cost">1,300</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Tony Juice Inc. -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/office.png"></td>
 				<td class="column-2">
-					<div class="building-name">Tony Juice Inc.</div>
+					<div class="building-name">Tony Juice Inc. x
+						<span class="quantity" id="office-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="office-cost">20,000</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Literally Elon Musk -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/elon.png"></td>
 				<td class="column-2">
-					<div class="building-name">Literally Elon Musk</div>
+					<div class="building-name">Literally Elon Musk x
+						<span class="quantity" id="elon-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="elon-cost">500,000</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Tony Juice Kingdom -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/crown.png"></td>
 				<td class="column-2">
-					<div class="building-name">Tony Juice Kingdom</div>
+					<div class="building-name">Tony Juice Kingdom x
+						<span class="quantity" id="kingdom-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="kingdom-cost">80,000,000</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Juice Planet -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/planet.jpg"></td>
 				<td class="column-2">
-					<div class="building-name">Juice Planet</div>
+					<div class="building-name">Juice Planet x
+						<span class="quantity" id="planet-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="planet-cost">1,000,000,000</span> TJ</div>
 				</td>
 			</tr>
 
 			<!-- Artificial Intelligence -->
-			<tr>
+			<tr class="clickable">
 				<td class="column-1"><img class="building-picture" src="images/ai.png"></td>
 				<td class="column-2">
-					<div class="building-name">Artificial Intelligence</div>
+					<div class="building-name">Artificial Intelligence x
+						<span class="quantity" id="ai-quantity">0</span>
+					</div>
 					<div class="cost">Cost: <span id="ai-cost">99,999,999,999</span> TJ</div>
 				</td>
 			</tr>
 
 		</table>
 
-		<div class="copyright">Original Tony Juice Clicker Concept by Tony Ngumah & Gabe Carrascoso. Remake by Keeran Sivaneri.</div>
+		<div class="copyright">Original Tony Juice Clicker by Tony Ngumah & Gabe Carrascoso. Remake by Keeran Sivaneri.</div>
 
 	</body>
 </html>
