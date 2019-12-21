@@ -4,15 +4,40 @@
 	<head>
 		<title>Tony Juice Clicker 2.0</title>
 
-		<link href="styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css"/>
 	</head>
 
 	<body>
 		<h1>Tony Juice Clicker 2.0</h1>
 
+		<table class="click-bonus-table">
+			<tr>
+				<td class="row-1">
+					<div>Currently, you gain 1 + <span id="clicking-bonus">0</span>% of your TJ/sec everytime you click for a total of <span id="tj-per-click">1</span> TJ/click.</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="row-2">
+					<img src="images/down_arrow.png">
+				</td>
+			</tr>
+			<tr>
+				<td class="row-3">
+					<div>Increase your clicking power by +1% of your TJ/sec.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td class="row-4">
+					<button>
+						<div>Click to Upgrade for <span id="click-upgrade-cost">500</span> TJ</div>
+					</button>
+				</td>
+			</tr>
+		</table>
+
 		<table class="statistics-table">
 			<tr>
-				<td>
+				<td class="cell-with-bottle">
 					<img id="bottle" src="images/juice_bottle.png">
 				</td>
 			</tr>

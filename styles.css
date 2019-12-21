@@ -20,12 +20,82 @@ div {
     color: white;
 }
 
+button {
+    background-color: gray;
+    color: white;
+    font-family: inherit;
+    border: 2px solid black;
+    height: 30px;
+    width: auto;
+}
+
+button > div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+button:hover {
+    transform: scale(1.01);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.click-bonus-table {
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 0 auto;
+    width: 250px;
+    font-size: 18px;
+    text-align: center;
+}
+
+img[src="images/down_arrow.png"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.row-1 {
+    background-image: url("images/wood-texture.jpg");
+    border: 2px solid;
+    height: 150px;
+}
+
+.row-1 > div, .row-3 > div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.row-2 {
+    height: 150px;
+}
+
+.row-3 {
+    background-image: url("images/wood-texture.jpg");
+    border: 2px solid;
+    height: 100px;
+}
+
+.row-4 {
+    height: 60px;
+}
+
 .statistics-table {
     margin: 0 auto;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 30%;
     margin: 0 auto;
+}
+
+.cell-with-bottle {
+    height: 350px;
 }
 
 .statistics {
@@ -35,9 +105,15 @@ div {
     height: 100px;
 }
 
+.statistics > div {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
 .buildings-table {
     margin-left: auto;
     margin-right: 25px;
+    top: 10%;
 }
 
 .clickable:hover {
@@ -51,17 +127,6 @@ div {
 .buildings-table > td {
     background-image: none;
     background-color: transparent;
-}
-
-button {
-    margin-left: 5px;
-    background-color: grey;
-    border: solid;
-    border-color: black;
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-    color: white;
 }
 
 .building-picture {
@@ -108,12 +173,16 @@ button {
     color: black;
 }
 
+#clicking-bonus {
+    color: lightgreen;
+}
+
 #bottle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 400px;
+    width: 115px;
+    height: 300px;
 }
 
 #bottle:hover {
