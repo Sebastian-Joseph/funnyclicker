@@ -5,15 +5,15 @@ let clickBonus = 0;
 let clickLevelCost = 500;
 let autoTonyJuice = 0;
 
-const COST_INCREASE = 1.4;
+const COST_INCREASE = 1.3;
 const CLICK_COST_INCREASE = 5;
 
 let juicer = {quantity: 0, juiceYield: 1, cost: 30};
 let farm = {quantity: 0, juiceYield: 8, cost: 1500};
-let factory = {quantity: 0, juiceYield: 64, cost: 35000};
-let office = {quantity: 0, juiceYield: 0, cost: };
-let elon = {quantity: 0, juiceYield: 0, cost: 0};
-let kingdom = {quantity: 0, juiceYield: 0, cost: 0};
+let factory = {quantity: 0, juiceYield: 32, cost: 35000};
+let office = {quantity: 0, juiceYield: 90, cost: 500000};
+let elon = {quantity: 0, juiceYield: 175, cost: 9000000};
+let kingdom = {quantity: 0, juiceYield: 400, cost: 20000000};
 let planet = {quantity: 0, juiceYield: 0, cost: 0};
 let ai = {quantity: 0, juiceYield: 0, cost: 0};
 
@@ -23,6 +23,7 @@ window.onload = function() {
     document.getElementById("juicer-button").onclick = buyJuicer;
     document.getElementById("farm-button").onclick = buyFarm;
     document.getElementById("factory-button").onclick = buyFactory;
+    document.getElementById("office-button").onclick = buyOffice;
 
     autoProduction();
     updateVariables();
