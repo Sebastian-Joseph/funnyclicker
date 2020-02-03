@@ -9,13 +9,13 @@ const COST_INCREASE = 1.3;
 const CLICK_COST_INCREASE = 5;
 
 let juicer = {quantity: 0, juiceYield: 1, cost: 30};
-let farm = {quantity: 0, juiceYield: 8, cost: 1500};
-let factory = {quantity: 0, juiceYield: 32, cost: 35000};
-let office = {quantity: 0, juiceYield: 90, cost: 500000};
-let elon = {quantity: 0, juiceYield: 175, cost: 9000000};
-let kingdom = {quantity: 0, juiceYield: 400, cost: 20000000};
-let planet = {quantity: 0, juiceYield: 0, cost: 0};
-let ai = {quantity: 0, juiceYield: 0, cost: 0};
+let farm = {quantity: 0, juiceYield: 8, cost: 1200};
+let factory = {quantity: 0, juiceYield: 32, cost: 11000};
+let office = {quantity: 0, juiceYield: 90, cost: 75000};
+let elon = {quantity: 0, juiceYield: 175, cost: 500000};
+let kingdom = {quantity: 0, juiceYield: 400, cost: 2500000};
+let planet = {quantity: 0, juiceYield: 3000, cost: 70000000};
+let ai = {quantity: 0, juiceYield: 69420, cost: 9999999999};
 
 window.onload = function() {
     document.getElementById("bottle").onclick = clickFunction;
@@ -24,13 +24,17 @@ window.onload = function() {
     document.getElementById("farm-button").onclick = buyFarm;
     document.getElementById("factory-button").onclick = buyFactory;
     document.getElementById("office-button").onclick = buyOffice;
+    document.getElementById("elon-button").onclick = buyElon;
+    document.getElementById("kingdom-button").onclick = buyKingdom;
+    document.getElementById("planet-button").onclick = buyPlanet;
+    document.getElementById("ai-button").onclick = buyAi;
 
     autoProduction();
     updateVariables();
 };
 
 const updateVariables = function() {
-    clickBonus = Math.round(0.01 * autoTonyJuice * clickLevel * 8);
+    clickBonus = Math.round(0.02 * autoTonyJuice * clickLevel * 8);
     tonyJuicePerClick = 1 + clickBonus;
     autoTonyJuice = (juicer.quantity * juicer.juiceYield) + (farm.quantity * farm.juiceYield) + (factory.quantity * factory.juiceYield) + (office.quantity * office.juiceYield)
      + (elon.quantity * elon.juiceYield) + (kingdom.quantity * kingdom.juiceYield) + (planet.quantity * planet.juiceYield) + (ai.quantity * ai.juiceYield);
@@ -54,11 +58,12 @@ const clickLevelUp = function() {
     if (tonyJuice >= clickLevelCost) {
         tonyJuice -= clickLevelCost;
         clickLevel++;
+        clickPercentDisplay = clickLevel * 2;
         clickLevelCost *= CLICK_COST_INCREASE;
 
         const x = document.getElementById("clicking-bonus");
         const y = document.getElementById("click-upgrade-cost");
-        x.innerHTML = clickLevel.toLocaleString("en");
+        x.innerHTML = clickPercentDisplay.toLocaleString("en");
         y.innerHTML = clickLevelCost.toLocaleString("en");
     }
 }
