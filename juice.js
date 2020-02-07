@@ -11,10 +11,10 @@ const CLICK_COST_INCREASE = 5;
 let juicer = {quantity: 0, juiceYield: 1, cost: 30};
 let farm = {quantity: 0, juiceYield: 8, cost: 1200};
 let factory = {quantity: 0, juiceYield: 32, cost: 11000};
-let office = {quantity: 0, juiceYield: 90, cost: 75000};
-let elon = {quantity: 0, juiceYield: 175, cost: 500000};
-let kingdom = {quantity: 0, juiceYield: 400, cost: 2500000};
-let planet = {quantity: 0, juiceYield: 3000, cost: 70000000};
+let office = {quantity: 0, juiceYield: 100, cost: 150000};
+let elon = {quantity: 0, juiceYield: 255, cost: 2000000};
+let kingdom = {quantity: 0, juiceYield: 750, cost: 25000000};
+let planet = {quantity: 0, juiceYield: 3000, cost: 300000000};
 let ai = {quantity: 0, juiceYield: 69420, cost: 9999999999};
 
 window.onload = function() {
@@ -148,7 +148,7 @@ const buyKingdom = function() {
         kingdom.cost = Math.ceil(kingdom.cost * COST_INCREASE);
 
         const x = document.getElementById("kingdom-quantity");
-        const y = document.getElementById("kingdomy-cost");
+        const y = document.getElementById("kingdom-cost");
         x.innerHTML = kingdom.quantity.toLocaleString("en");
         y.innerHTML = kingdom.cost.toLocaleString("en");
     }
@@ -158,7 +158,7 @@ const buyPlanet = function() {
     if (tonyJuice >= planet.cost) {
         tonyJuice -= planet.cost;
         planet.quantity++;
-        planet.cost = Math.ceil(factory.cost * COST_INCREASE);
+        planet.cost = Math.ceil(planet.cost * COST_INCREASE);
 
         const x = document.getElementById("planet-quantity");
         const y = document.getElementById("planet-cost");
@@ -179,3 +179,17 @@ const buyAi = function() {
         y.innerHTML = ai.cost.toLocaleString("en");
     }
 };
+
+const cheat = function(p) {
+    if (p === 69420) {
+        for (let i = 0; i < 69420; i++) {
+            ai.quantity++;
+            ai.cost = Math.ceil(ai.cost * COST_INCREASE);
+
+            const x = document.getElementById("ai-quantity");
+            const y = document.getElementById("ai-cost");
+            x.innerHTML = ai.quantity.toLocaleString("en");
+            y.innerHTML = ai.cost.toLocaleString("en");
+        }
+    }
+}
